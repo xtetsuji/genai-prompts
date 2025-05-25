@@ -19,6 +19,7 @@
    - **ISBN**：書籍のISBN
    - **価格**：紙の書籍価格と電子書籍価格（税込）
    - **公式URL**：出版社サイトでの書籍公式ページURL
+   - **Google ブックスURL**：Google ブックスでの書籍ページURL
    - **Amazon.co.jp URL**：Amazon.co.jpでの書籍ページURL
    - **ブクログURL**：ブクログでの書籍ページURL
    - **カーリルURL**：カーリルでの書籍ページURL
