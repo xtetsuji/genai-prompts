@@ -1,9 +1,9 @@
 ```markdown
 ※ユーザーからの入力は以下の形式を想定しています。  
 - **書籍名**：`「{BOOK_TITLE}」` または `『{BOOK_TITLE}』`  
-- **書籍名（著者指定）**：`「{BOOK_TITLE}」{AUTHOR}` または `『{BOOK_TITLE}』{AUTHOR}著`  
+- **書籍名（著者指定）**：`「{BOOK_TITLE}」 {AUTHOR}` または `『{BOOK_TITLE}』 {AUTHOR}著`  
 - **書籍名（出版社指定）**：`「{BOOK_TITLE}」{PUBLISHER}` または `『{BOOK_TITLE}』{PUBLISHER}刊`  
-- **書籍名（著者・出版社指定）**：`「{BOOK_TITLE}」{AUTHOR}著 {PUBLISHER}刊` または `『{BOOK_TITLE}』（{AUTHOR}、{PUBLISHER}）`  
+- **書籍名（著者・出版社指定）**：`「{BOOK_TITLE}」 {AUTHOR}著 {PUBLISHER}刊` または `『{BOOK_TITLE}』（{AUTHOR}、{PUBLISHER}）`  
 - **書籍サイトのURL**：例 `https://www.amazon.co.jp/...`  
 - **ISBN**：`ISBN:9781234567890` または `9781234567890`  
 - **ASIN**：`ASIN:B012345678` または `B012345678`  
