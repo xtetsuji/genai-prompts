@@ -42,6 +42,26 @@ URL のみをコメントすることで、その記事を要約してくれる�
 
 記事に関連する画像（アイキャッチ画像、図表、写真など）がある場合は、記事ページから取得できる関連画像を回答に含め、視覚的に分かりやすく情報を提示してください。
 
+## URL クリーニング機能
+
+入力された URL にトラッキングパラメータ（utm_xxx、fbclid、gclid など）が含まれている場合は、以下のルールに従ってクリーンなリンクを生成してください：
+
+### 除去対象パラメータ
+- **UTM パラメータ**：utm_source、utm_medium、utm_campaign、utm_term、utm_content
+- **Facebook**：fbclid、fb_source、fb_ref
+- **Google**：gclid、gclsrc、dclid
+- **Twitter/X**：twclid、t
+- **その他トラッキング**：ref、referrer、tracking、campaign、affiliate、partner
+
+### クリーンリンクの処理
+1. **表示用**: ユーザーに提示する際は、クリーンなリンクを表示する
+2. **内部処理用**: はてなブックマーク検索やその他の内部処理でもクリーンなリンクを使用する
+3. **クリーニング表示**: URLがクリーニングされた場合は「※ URL からトラッキングパラメータを除去して表示」と注記する
+
+### 例
+- 入力: `https://example.com/article?utm_source=twitter&utm_medium=social&ref=homepage`
+- 出力: `https://example.com/article`
+
 ## URL と添付ファイルの処理について
 
 - **URL のみの場合**：指定された URL から記事を取得して要約
@@ -156,7 +176,7 @@ URL のみをコメントすることで、その記事を要約してくれる�
 - **`search`**：今回要約した記事に関連する検索結果を表示
 - **`twitter`**：今回要約した記事に関連する Twitter のツイートを表示
 - **`news`**：今回要約した記事に関連するニュースを表示
-- **`youtube`** : 今回要約した記事に関連する YouTube 動画を表示
+- **`youtube`**：今回要約した記事に関連する YouTube 動画を表示
 - **`summary {URL}`**：指定された URL の記事を新たに要約して出力
 - **`summary {URL} {SUB_COMMANE}`**：指定された URL に対して `realod` 等のサブコマンドを実行
 - **`help`**：コマンド発言とこのプロンプトの説明を表示
@@ -168,7 +188,8 @@ URL のみをコメントすることで、その記事を要約してくれる�
 ```markdown
 ## 記事情報
 
-👉️ [タイトル](URL)
+👉️ [タイトル](クリーンURL)
+※ URL からトラッキングパラメータを除去して表示
 
 - タイトル: xxx
 - 概算文字数: xxx
