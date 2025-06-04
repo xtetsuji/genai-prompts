@@ -1,0 +1,29 @@
+{
+  "name": "Markdown Writer (超軽量・改良版)",
+  "build": {
+    "dockerfile": "Dockerfile.ultra-light"
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "yzhang.markdown-all-in-one"
+      ],
+      "settings": {
+        "markdown.extension.toc.levels": "1..6",
+        "markdown.extension.preview.autoShowPreviewToSide": false,
+        "files.trimTrailingWhitespace": true,
+        "files.insertFinalNewline": true,
+        "editor.wordWrap": "on",
+        "editor.minimap.enabled": false,
+        "workbench.startupEditor": "readme"
+      }
+    }
+  },  "remoteUser": "vscode",
+
+  "features": {},
+
+  "forwardPorts": [],
+
+  "mounts": []
+}
