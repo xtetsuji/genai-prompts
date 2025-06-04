@@ -1,0 +1,25 @@
+{
+  "name": "Markdown Writer (超軽量)",
+  "image": "mcr.microsoft.com/vscode/devcontainers/base:alpine-3.18",
+  
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "yzhang.markdown-all-in-one",
+        "davidanson.vscode-markdownlint"
+      ],
+      "settings": {
+        "markdown.extension.toc.levels": "1..6",
+        "markdown.extension.preview.autoShowPreviewToSide": true,
+        "files.trimTrailingWhitespace": true,
+        "files.insertFinalNewline": true,
+        "editor.wordWrap": "on",
+        "editor.lineNumbers": "on"
+      }
+    }
+  },
+
+  "postCreateCommand": "apk update && apk add --no-cache git pandoc",
+  
+  "remoteUser": "vscode"
+}

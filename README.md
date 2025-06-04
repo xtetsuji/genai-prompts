@@ -21,4 +21,22 @@ xtetsuji が活用している生成AI用のプロンプトです。
 
 ---
 
+## 開発環境
+
+このリポジトリは軽量なGitHub Codespaces環境でMarkdown執筆に最適化されています。
+
+### 特徴
+- **Alpine Linuxベース** で高速起動
+- **Markdown執筆専用** の最小限ツールセット
+- **軽量化** により数十秒での起動を実現
+
+### 使用ツール
+- Git
+- Pandoc（文書変換）
+- VS Code拡張機能（Markdown All in One、markdownlintなど）
+
+詳細は [.devcontainer/README.md](.devcontainer/README.md) をご覧ください。
+
+---
+
 各プロンプトの詳細は、該当のMarkdownファイルをご覧ください。

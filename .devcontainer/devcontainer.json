@@ -1,0 +1,31 @@
+{
+  "name": "Markdown Writer (超軽量)",
+  "image": "mcr.microsoft.com/devcontainers/base:alpine-3.18",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "yzhang.markdown-all-in-one"
+      ],
+      "settings": {
+        "markdown.extension.toc.levels": "1..6",
+        "markdown.extension.preview.autoShowPreviewToSide": false,
+        "files.trimTrailingWhitespace": true,
+        "files.insertFinalNewline": true,
+        "editor.wordWrap": "on",
+        "editor.minimap.enabled": false,
+        "workbench.startupEditor": "readme"
+      }
+    }
+  },
+
+  "postCreateCommand": "apk update --quiet && apk add --no-cache --quiet git && echo '軽量Markdown環境の準備完了'",
+
+  "remoteUser": "vscode",
+
+  "features": {},
+
+  "forwardPorts": [],
+
+  "mounts": []
+}
