@@ -1,6 +1,19 @@
 #!/bin/bash
 set -e
 
+# Check for required commands
+for cmd in git curl sudo dpkg; do
+    if ! command -v $cmd &> /dev/null; then
+        echo "Error: Required command '$cmd' is not installed. Please install it and try again."
+        exit 1
+    fi
+done
+
+# Check for network connectivity
+if ! ping -c 1 8.8.8.8 &> /dev/null; then
+    echo "Error: No network connectivity. Please check your internet connection and try again."
+    exit 1
+fi
 echo "=== Codespaces セットアップ開始 ==="
 
 # 基本ツールのインストール
