@@ -1,14 +1,13 @@
 {
-  "name": "Markdown Writer (Ubuntu)",
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+  "name": "Markdown Writer (Alpine・超軽量)",
+  "build": {
+    "dockerfile": "Dockerfile.ultra-light"
+  },
 
   "customizations": {
     "vscode": {
       "extensions": [
-        "yzhang.markdown-all-in-one",
-        "davidanson.vscode-markdownlint",
-        "github.vscode-github-actions",
-        "github.vscode-pull-request-github"
+        "yzhang.markdown-all-in-one"
       ],
       "settings": {
         "markdown.extension.toc.levels": "1..6",
@@ -21,8 +20,6 @@
       }
     }
   },
-
-  "postCreateCommand": ".devcontainer/setup.sh",
 
   "remoteUser": "vscode",
 
