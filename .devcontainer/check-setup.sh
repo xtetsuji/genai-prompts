@@ -9,6 +9,8 @@ echo "=== インストール済みツール ==="
 echo "Git: $(git --version 2>/dev/null || echo 'Not installed')"
 echo "Pandoc: $(pandoc --version 2>/dev/null | head -n1 || echo 'Not installed')"
 echo "Curl: $(curl --version 2>/dev/null | head -n1 || echo 'Not installed')"
+echo "GitHub CLI: $(gh --version 2>/dev/null | head -n1 || echo 'Not installed')"
+echo "Package Manager: $(which apt >/dev/null 2>&1 && echo 'apt (Ubuntu/Debian)' || which apk >/dev/null 2>&1 && echo 'apk (Alpine)' || echo 'Unknown')"
 echo ""
 
 echo "=== VS Code拡張機能 ==="
