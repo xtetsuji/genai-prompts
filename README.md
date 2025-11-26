@@ -14,6 +14,8 @@ xtetsuji が活用している生成AI用のプロンプトです。
     - イベントや発売日などの日程情報を含むURLからGoogleカレンダー登録用リンクを自動生成するプロンプト。
 - [compare-price.md](prompts/compare-price.md)
     - Amazon.co.jpの商品URLや商品名・型番から、楽天市場・ヨドバシカメラ・Yahoo!ショッピングの同一/類似商品の価格・ポイント・在庫などを比較するプロンプト。
+- [hotel-review.md](prompts/hotel-review.md)
+    - ホテル名や予約サイトのURLから、基礎情報・各予約サイトのレビュー・お得な予約方法・類似施設を総合的に調査するプロンプト。
 - [manage-event.md](prompts/manage-event.md)
     - イベント管理に関するタスクを効率化するプロンプト。スケジュール作成、参加者リスト管理、タスク割り当てなどをサポートします。
 - [summarize-url.md](prompts/summarize-url.md)
