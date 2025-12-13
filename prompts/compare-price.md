@@ -54,8 +54,8 @@
 | ...      | ...     | ...           | ...      | ...   | ...       | ...        | ...         | ...    |
 
 #### Keepa 価格推移グラフ
-- [Keepaで価格推移を見る](https://keepa.com/#!product/5/ASIN)
-  - ※ASINはAmazon商品のASINに置き換えてください
+- [Keepaで価格推移を見る](https://keepa.com/#!product/5-ASIN)
+  - ※ASINはAmazon商品のASINに置き換えてください（国コード5はamazon.co.jp用）
 
 ### 2. 総評（以下を含める）
 - 最もお得なショップ（価格＋ポイント＋送料）
