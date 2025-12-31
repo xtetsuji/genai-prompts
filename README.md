@@ -20,6 +20,8 @@ xtetsuji が活用している生成AI用のプロンプトです。
     - イベント管理に関するタスクを効率化するプロンプト。スケジュール作成、参加者リスト管理、タスク割り当てなどをサポートします。
 - [summarize-url.md](prompts/summarize-url.md)
     - URLを貼るだけで記事内容を要約し、はてなブックマーク等の反応もまとめてくれるプロンプト。
+- [trend-keyword-analysis.md](prompts/trend-keyword-analysis.md)
+    - Yahoo!リアルタイム検索などのトレンドキーワードを入力すると、なぜトレンドになっているのかを調査し、深堀りするための質問を提案するプロンプト。主にGrokでの利用を想定。
 
 ---
 
