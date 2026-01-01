@@ -20,6 +20,8 @@ xtetsuji が活用している生成AI用のプロンプトです。
     - ホテル名や予約サイトのURLから、基礎情報・各予約サイトのレビュー・お得な予約方法・類似施設を総合的に調査するプロンプト。
 - [manage-event.md](prompts/manage-event.md)
     - イベント管理に関するタスクを効率化するプロンプト。スケジュール作成、参加者リスト管理、タスク割り当てなどをサポートします。
+- [news-deep-dive.md](prompts/news-deep-dive.md)
+    - ニューストピックを入力すると、信頼できるニュースソースから個人ブログ・SNSまで幅広く情報を収集し、時系列や登場人物軸で整理。update コマンドで継続的に情報を追跡できるプロンプト。
 - [summarize-url.md](prompts/summarize-url.md)
     - URLを貼るだけで記事内容を要約し、はてなブックマーク等の反応もまとめてくれるプロンプト。
 - [trend-keyword-analysis.md](prompts/trend-keyword-analysis.md)
