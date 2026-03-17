@@ -16,6 +16,8 @@ xtetsuji が活用している生成AI用のプロンプトです。
     - Amazon.co.jpの商品URLや商品名・型番から、楽天市場・ヨドバシカメラ・Yahoo!ショッピングの同一/類似商品の価格・ポイント・在庫などを比較するプロンプト。
 - [ego-search.md](prompts/ego-search.md)
     - エゴサーチ（自分や自身の活動についての言及検索）およびパブリックサーチ（特定トピックの一般的な評判調査）を総合的に実施し、ウェブ上の言及やSNS投稿を効率的に収集・分析するプロンプト。
+- [fact-check.md](prompts/fact-check.md)
+    - 商業メディアのニュース記事、個人ブログ、YouTube 動画の文字起こし、Podcast 等の音声メディアの書き起こしなど、様々な形式のコンテンツに含まれる主張の正確性を検証するファクトチェックプロンプト。
 - [hotel-review.md](prompts/hotel-review.md)
     - ホテル名や予約サイトのURLから、基礎情報・各予約サイトのレビュー・お得な予約方法・類似施設を総合的に調査するプロンプト。
 - [manage-event.md](prompts/manage-event.md)
