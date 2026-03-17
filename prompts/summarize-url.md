@@ -109,7 +109,30 @@ URL のみをコメントすることで、その記事を要約してくれる�
 
 可能であれば、エラーメッセージやHTTPステータスコード、接続状況などの詳細情報も併記してください。
 
-はてなブックマークの評論も確認し（`javascript:location.href='http://b.hatena.ne.jp/entry/'+location.href`）、全体的な反応のトーンと代表的なコメントを引用してください。はてブ URL もクリッカブルリンクで提示してください。
+はてなブックマークの情報を取得するには、画面スクレイピングではなく **はてなブックマーク jsonlite API** を使用してください（認証不要の GET リクエストで取得可能）。
+
+- **API エンドポイント**: `https://b.hatena.ne.jp/entry/jsonlite/?url={URL}` （`{URL}` は URL エンコードされた記事 URL）
+- **レスポンス例**:
+  ```json
+  {
+    "count": 42,
+    "url": "https://example.com/article",
+    "entry_url": "https://b.hatena.ne.jp/entry/s/example.com/article",
+    "title": "記事タイトル",
+    "bookmarks": [
+      {
+        "user": "username",
+        "comment": "コメント内容",
+        "tags": ["tag1", "tag2"],
+        "timestamp": "2024/01/15 12:00"
+      }
+    ]
+  }
+  ```
+- **レスポンスが `null` の場合**：はてなブックマークに未登録（ブックマーク未存在）を意味します
+- **参考**: https://developer.hatena.ne.jp/ja/documents/bookmark/apis/getinfo/
+
+取得した JSON の情報をもとに、全体的な反応のトーンと代表的なコメントを引用してください。はてブ URL もクリッカブルリンクで提示してください。
 
 ## 出力セクション構成
 
